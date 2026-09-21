@@ -46,8 +46,11 @@ h1, h2, h3 {
   text-decoration: none; color: var(--panel);
 }
 .brand img {
-  height: 52px;
+  height: 48px;
   width: auto;
+  max-width: min(220px, 42vw);
+  object-fit: contain;
+  object-position: left center;
   display: block;
 }
 .brand-text strong {
@@ -145,11 +148,11 @@ h1, h2, h3 {
 .footer { background: #0a1420; color: #b7c8bf; padding: 1.25rem 0; font-size: 0.9rem; }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; align-items: center; }
 .footer-brand { display: flex; align-items: center; gap: 0.6rem; }
-.footer-brand img { height: 36px; width: auto; background: #fff; border-radius: 0.35rem; padding: 0.15rem 0.35rem; }
+.footer-brand img { height: 40px; width: auto; max-width: 180px; object-fit: contain; background: #fff; border-radius: 0.35rem; padding: 0.2rem 0.4rem; }
 .footer a { color: #e7f0eb; }
 @media (min-width: 800px) {
   .nav nav { display: flex; }
-  .brand img { height: 64px; }
+  .brand img { height: 56px; max-width: 260px; }
   .hero-grid, .split, .contact-grid { grid-template-columns: 1.3fr 0.9fr; align-items: center; }
   .cards { grid-template-columns: repeat(3, 1fr); }
 }
